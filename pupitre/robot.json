@@ -1,0 +1,442 @@
+{
+    "motors": [
+        {
+            "registers": [
+                "registers",
+                "goal_speed",
+                "compliant",
+                "safe_compliant",
+                "angle_limit",
+                "id",
+                "name",
+                "model",
+                "present_position",
+                "goal_position",
+                "present_speed",
+                "moving_speed",
+                "present_load",
+                "torque_limit",
+                "lower_limit",
+                "upper_limit",
+                "present_voltage",
+                "present_temperature",
+                "pid",
+                "led",
+                "control_mode"
+            ],
+            "goal_speed": -0.0,
+            "compliant": true,
+            "angle_limit": [
+                -150.0,
+                150.0
+            ],
+            "id": 1,
+            "name": "m1",
+            "model": "XL-320",
+            "present_position": 1.91,
+            "goal_position": -150.0,
+            "present_speed": 0.0,
+            "moving_speed": 0.0,
+            "present_load": 0.0,
+            "torque_limit": 70.0,
+            "lower_limit": -150.0,
+            "upper_limit": 150.0,
+            "present_voltage": 7.5,
+            "present_temperature": 26.0,
+            "pid": [
+                4,
+                2,
+                0
+            ],
+            "led": "off",
+            "control_mode": 0
+        },
+        {
+            "registers": [
+                "registers",
+                "goal_speed",
+                "compliant",
+                "safe_compliant",
+                "angle_limit",
+                "id",
+                "name",
+                "model",
+                "present_position",
+                "goal_position",
+                "present_speed",
+                "moving_speed",
+                "present_load",
+                "torque_limit",
+                "lower_limit",
+                "upper_limit",
+                "present_voltage",
+                "present_temperature",
+                "pid",
+                "led",
+                "control_mode"
+            ],
+            "goal_speed": -0.0,
+            "compliant": true,
+            "angle_limit": [
+                89.88,
+                -125.07
+            ],
+            "id": 2,
+            "name": "m2",
+            "model": "XL-320",
+            "present_position": -6.01,
+            "goal_position": 150.0,
+            "present_speed": -0.0,
+            "moving_speed": -0.0,
+            "present_load": -0.0,
+            "torque_limit": 70.0,
+            "lower_limit": 89.88,
+            "upper_limit": -125.07,
+            "present_voltage": 7.6000000000000005,
+            "present_temperature": 27.0,
+            "pid": [
+                4,
+                2,
+                0
+            ],
+            "led": "off",
+            "control_mode": 0
+        },
+        {
+            "registers": [
+                "registers",
+                "goal_speed",
+                "compliant",
+                "safe_compliant",
+                "angle_limit",
+                "id",
+                "name",
+                "model",
+                "present_position",
+                "goal_position",
+                "present_speed",
+                "moving_speed",
+                "present_load",
+                "torque_limit",
+                "lower_limit",
+                "upper_limit",
+                "present_voltage",
+                "present_temperature",
+                "pid",
+                "led",
+                "control_mode"
+            ],
+            "goal_speed": -0.0,
+            "compliant": true,
+            "angle_limit": [
+                89.88,
+                -89.88
+            ],
+            "id": 3,
+            "name": "m3",
+            "model": "XL-320",
+            "present_position": 43.26,
+            "goal_position": 150.0,
+            "present_speed": -0.0,
+            "moving_speed": -0.0,
+            "present_load": -0.0,
+            "torque_limit": 70.0,
+            "lower_limit": 89.88,
+            "upper_limit": -89.88,
+            "present_voltage": 7.1000000000000005,
+            "present_temperature": 27.0,
+            "pid": [
+                4,
+                2,
+                0
+            ],
+            "led": "off",
+            "control_mode": 0
+        },
+        {
+            "registers": [
+                "registers",
+                "goal_speed",
+                "compliant",
+                "safe_compliant",
+                "angle_limit",
+                "id",
+                "name",
+                "model",
+                "present_position",
+                "goal_position",
+                "present_speed",
+                "moving_speed",
+                "present_load",
+                "torque_limit",
+                "lower_limit",
+                "upper_limit",
+                "present_voltage",
+                "present_temperature",
+                "pid",
+                "led",
+                "control_mode"
+            ],
+            "goal_speed": -0.0,
+            "compliant": true,
+            "angle_limit": [
+                -150.0,
+                150.0
+            ],
+            "id": 4,
+            "name": "m4",
+            "model": "XL-320",
+            "present_position": 5.13,
+            "goal_position": -150.0,
+            "present_speed": 0.0,
+            "moving_speed": 0.0,
+            "present_load": 0.0,
+            "torque_limit": 70.0,
+            "lower_limit": -150.0,
+            "upper_limit": 150.0,
+            "present_voltage": 6.800000000000001,
+            "present_temperature": 26.0,
+            "pid": [
+                4,
+                2,
+                0
+            ],
+            "led": "off",
+            "control_mode": 0
+        },
+        {
+            "registers": [
+                "registers",
+                "goal_speed",
+                "compliant",
+                "safe_compliant",
+                "angle_limit",
+                "id",
+                "name",
+                "model",
+                "present_position",
+                "goal_position",
+                "present_speed",
+                "moving_speed",
+                "present_load",
+                "torque_limit",
+                "lower_limit",
+                "upper_limit",
+                "present_voltage",
+                "present_temperature",
+                "pid",
+                "led",
+                "control_mode"
+            ],
+            "goal_speed": -0.0,
+            "compliant": true,
+            "angle_limit": [
+                89.88,
+                -89.88
+            ],
+            "id": 5,
+            "name": "m5",
+            "model": "XL-320",
+            "present_position": 39.15,
+            "goal_position": 150.0,
+            "present_speed": -0.0,
+            "moving_speed": -0.0,
+            "present_load": -0.0,
+            "torque_limit": 70.0,
+            "lower_limit": 89.88,
+            "upper_limit": -89.88,
+            "present_voltage": 6.800000000000001,
+            "present_temperature": 26.0,
+            "pid": [
+                4,
+                2,
+                0
+            ],
+            "led": "off",
+            "control_mode": 0
+        },
+        {
+            "registers": [
+                "registers",
+                "goal_speed",
+                "compliant",
+                "safe_compliant",
+                "angle_limit",
+                "id",
+                "name",
+                "model",
+                "present_position",
+                "goal_position",
+                "present_speed",
+                "moving_speed",
+                "present_load",
+                "torque_limit",
+                "lower_limit",
+                "upper_limit",
+                "present_voltage",
+                "present_temperature",
+                "pid",
+                "led",
+                "control_mode"
+            ],
+            "goal_speed": -0.0,
+            "compliant": true,
+            "angle_limit": [
+                110.12,
+                -89.88
+            ],
+            "id": 6,
+            "name": "m6",
+            "model": "XL-320",
+            "present_position": -54.69,
+            "goal_position": 150.0,
+            "present_speed": -0.0,
+            "moving_speed": -0.0,
+            "present_load": -0.0,
+            "torque_limit": 70.0,
+            "lower_limit": 110.12,
+            "upper_limit": -89.88,
+            "present_voltage": 6.7,
+            "present_temperature": 26.0,
+            "pid": [
+                4,
+                2,
+                0
+            ],
+            "led": "off",
+            "control_mode": 0
+        }
+    ],
+    "primitives": [
+        {
+            "primitive": "safe_power_up",
+            "running": false,
+            "properties": [],
+            "methods": [
+                "start",
+                "stop",
+                "pause",
+                "resume"
+            ]
+        },
+        {
+            "primitive": "dance",
+            "running": false,
+            "properties": [],
+            "methods": [
+                "start",
+                "stop",
+                "pause",
+                "resume"
+            ]
+        },
+        {
+            "primitive": "base_posture",
+            "running": false,
+            "properties": [],
+            "methods": [
+                "start",
+                "stop",
+                "pause",
+                "resume"
+            ]
+        },
+        {
+            "primitive": "rest_posture",
+            "running": false,
+            "properties": [],
+            "methods": [
+                "start",
+                "stop",
+                "pause",
+                "resume"
+            ]
+        },
+        {
+            "primitive": "curious_posture",
+            "running": false,
+            "properties": [],
+            "methods": [
+                "start",
+                "stop",
+                "pause",
+                "resume"
+            ]
+        },
+        {
+            "primitive": "tetris_posture",
+            "running": false,
+            "properties": [],
+            "methods": [
+                "start",
+                "stop",
+                "pause",
+                "resume"
+            ]
+        },
+        {
+            "primitive": "tinsel_demo",
+            "running": false,
+            "properties": [],
+            "methods": [
+                "start",
+                "stop",
+                "pause",
+                "resume"
+            ]
+        },
+        {
+            "primitive": "stubborn_demo",
+            "running": false,
+            "properties": [],
+            "methods": [
+                "start",
+                "stop",
+                "pause",
+                "resume"
+            ]
+        },
+        {
+            "primitive": "chicken_demo",
+            "running": false,
+            "properties": [],
+            "methods": [
+                "start",
+                "stop",
+                "pause",
+                "resume"
+            ]
+        },
+        {
+            "primitive": "puzzel_demo",
+            "running": false,
+            "properties": [],
+            "methods": [
+                "start",
+                "stop",
+                "pause",
+                "resume",
+                "level_veryeasy",
+                "level_easy",
+                "level_noramle",
+                "level_hard",
+                "level_veryhard",
+                "level_growing",
+                "precision_easy",
+                "precision_normal",
+                "precision_hard"
+            ]
+        },
+        {
+            "primitive": "tracking_feedback",
+            "running": false,
+            "properties": [],
+            "methods": [
+                "start",
+                "stop",
+                "pause",
+                "resume"
+            ]
+        }
+    ]
+}
