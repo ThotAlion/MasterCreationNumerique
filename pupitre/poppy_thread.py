@@ -136,6 +136,7 @@ def run_script():
                         set_position(dxl_id, (1-a)*posInit[dxl_id-1]+(a)*listPos[0][dxl_id-1])
                     else:
                         set_position(dxl_id, None)
+        
         while time.time()<t+0.04:
             time.sleep(0.001)
 
@@ -145,10 +146,16 @@ thread.start()
 @app.route('/set_positions', methods=['POST'])
 def handle_set_positions():
     global listPos,t0,posInit
+    comment = "OK"
     content = request.get_json()
-    listPos=[content[0]]+content
+    listPos = [content[0]]
+    for c in content:
+        if (len(c)==7):
+            listPos.append(c)
+        else:
+            comment = str(c)+" n'a pas 7 éléments"
     t0=0
-    return jsonify({"result": "OK"}), 200
+    return jsonify({"result": comment}), 200
 
 @app.route('/set_leds', methods=['POST'])
 def handle_set_leds():

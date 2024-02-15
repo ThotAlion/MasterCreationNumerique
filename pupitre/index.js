@@ -1,5 +1,5 @@
 // IP of the robot
-var IProbot = "192.168.1.151:5000";
+var IProbot = "10.0.0.107:5000";
 var mesPos = 0;
 
 // function to make a pause. Delay is in milliseconds
@@ -31,6 +31,10 @@ setPos = function(IP,listPos){
         method: 'POST',
         body: valstr,
         headers: {"Content-Type":"application/json;charset=UTF-8"}
+    })
+    .then(res => res.json())
+    .then(data => {
+        document.getElementById("positions").innerHTML = data.result;
     })
     .catch(err => console.log(err));
 }
@@ -64,6 +68,10 @@ document.getElementById("bouton3").addEventListener("click",function (evt){
 });
 document.getElementById("bouton4").addEventListener("click",function (evt){
     setLed(IProbot,["red","red","red","red","red","red"]);
+    sleep(1000);
+    setLed(IProbot,["off","off","off","off","off","off"]);
+    sleep(1000);
+    setLed(IProbot,["red","red","red","red","red","red"]);
 });
 document.getElementById("bouton5").addEventListener("click",function (evt){
     setPos(IProbot,[[0,0,0,0,0,0,2]]);
@@ -73,15 +81,11 @@ document.getElementById("bouton6").addEventListener("click",function (evt){
 });
 document.getElementById("bouton7").addEventListener("click",function (evt){
     let chore = []
-    chore.push([0,0,0,0,0,0,2]);
-    chore.push([0,0,0,0,0,40,1.8]);
-    chore.push([0,0,0,0,0,0,1.6]);
-    chore.push([0,0,0,0,0,40,1.4]);
-    chore.push([0,0,0,0,0,0,1.2]);
-    chore.push([0,0,0,0,0,40,1]);
-    chore.push([0,0,0,0,0,0,0.8]);
-    chore.push([0,0,0,0,0,40,0.6]);
-    chore.push([0,0,0,0,0,0,0.4]);
-    chore.push([0,0,0,0,0,40,0.2]);
+    chore.push([-29,13,-25,-2,86,89,3]);//pose depart
+    chore.push([-30,21,-2,-3,-40,-30,1]); //leve
+    chore.push([-60,-37,-25,-2,6,19]);
+    chore.push([90,-55,0,-2,-5,38,0.2]); //mouche morte
+    chore.push([90,-55,0,-2,-5,38,2]); //mouche morte
+    chore.push([-29,13,-25,-2,86,89,3]);//pose depart
     setPos(IProbot,chore);
 });
