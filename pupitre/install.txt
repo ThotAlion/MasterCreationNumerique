@@ -1,3 +1,6 @@
+login : pi
+mot de passe : Caliban--33
+
 sudo raspi-config
 autologin
 ouvrir port série
