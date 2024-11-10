@@ -115,27 +115,31 @@ def run_script():
     while True:
         t=time.time()
         
-        if len(listPos)>0:
-            print(listPos,t-t0)
-            if (t-t0)>listPos[0][6]:
-                listPos.pop(0)
-                t0=t
-                posInit = []
-                for dxl_id in range(1, 7):  # Assuming motor IDs are 1 to 6
-                    position, errmsg = get_position(dxl_id)
-                    
-                    if position is not None:
-                        posInit.append(position)
-                    else:
-                        posInit.append(0)
-                print("posIint:",posInit)
-            else:
-                for dxl_id in range(1, 7):
-                    a = (t-t0)/listPos[0][6]
-                    if listPos[0][dxl_id-1] is not None:
-                        set_position(dxl_id, (1-a)*posInit[dxl_id-1]+(a)*listPos[0][dxl_id-1])
-                    else:
-                        set_position(dxl_id, None)
+        try:
+            if len(listPos)>0:
+                print(listPos,t-t0)
+                if (t-t0)>listPos[0][6]:
+                    listPos.pop(0)
+                    t0=t
+                    posInit = []
+                    for dxl_id in range(1, 7):  # Assuming motor IDs are 1 to 6
+                        position, errmsg = get_position(dxl_id)
+                        
+                        if position is not None:
+                            posInit.append(position)
+                        else:
+                            posInit.append(0)
+                    print("posIint:",posInit)
+                else:
+                    for dxl_id in range(1, 7):
+                        a = (t-t0)/listPos[0][6]
+                        if listPos[0][dxl_id-1] is not None:
+                            set_position(dxl_id, (1-a)*posInit[dxl_id-1]+(a)*listPos[0][dxl_id-1])
+                        else:
+                            set_position(dxl_id, None)
+        except Exception as error:
+            # handle the exception
+            print("An exception occurred:", error) # An exception occurred: division by zero
         
         while time.time()<t+0.04:
             time.sleep(0.001)

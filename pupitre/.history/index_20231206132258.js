@@ -1,5 +1,5 @@
 // IP of the robot
-var IProbot = "192.168.1.53:5000";
+var IProbot = "10.0.0.107:5000";
 var mesPos = 0;
 
 // function to make a pause. Delay is in milliseconds

@@ -74,7 +74,7 @@ document.getElementById("bouton4").addEventListener("click",function (evt){
     setLed(IProbot,["red","red","red","red","red","red"]);
 });
 document.getElementById("bouton5").addEventListener("click",function (evt){
-    setPos(IProbot,[[0,0,0,0,0,0,2]]);
+    setPos(IProbot,[[0,0,0,0,0,2]]);
 });
 document.getElementById("bouton6").addEventListener("click",function (evt){
     getPos(IProbot);
